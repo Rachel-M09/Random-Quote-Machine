@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Machine</title>
+    <script src="https://kit.fontawesome.com/c658eda5d2.js" crossorigin="anonymous"></script>
+    <script>
+      const QUOTEBANK = [
+        {
+          quote: "Love recognizes no barriers.",
+          author: "Maya Angelou"
+        },
+        {
+          quote: "The most important thing is to enjoy your life—to be happy—it’s all that matters.",
+          author: "Steve Jobs"
+        },
+        {
+          quote: "Some people want it to happen, some wish it would happen, others make it happen.",
+          author: "Michael Jordan"
+        },
+      ]
+
+      window.onload = init;
+      function init() {
+      quoteGenerator() 
+    }
+
+    function quoteGenerator(){
+    let quoteSize = QUOTEBANK.length;
+    let randomIndex = Math.floor(Math.random() * quoteSize);
+    let randomQuoteData = QUOTEBANK[randomIndex];
+
+    let twitterLink = "https://x.com/intent/post?hashtags=quotes&related=freecodecamp&text=%22";
+
+    let authorInApiFormat = randomQuoteData.author.replace(g, "%20");
+    twitterLink += " - " + authorInApiFormat;
+
+    let quoteInApiFormat = randomQuoteData.quote.replace(/ /g, "%20");
+    twitterLink += quoteInApiFormat;
+
+    document.getElementById("tweet-quote").href = twitterLink;
+    document.getElementById("text").innerText = randomQuoteData.quote;
+    document.getElementById("author").innerText = randomQuoteData.author;
+    
+
+    }
+    </script>
+</head>
+<body>
+  <wrapper id="quote-box">
+    <div id="text"></div>
+    <div id="author"></div>
+    <button id="new-quote" onClick="quoteGenerator()">New Quote</button>
+    <a target="_blank" id="tweet-quote"><i class="fa-brands fa-twitter"></i></a>
+  </wrapper>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>   
+</body>
+</html>
