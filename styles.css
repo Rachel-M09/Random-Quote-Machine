@@ -1,19 +1,65 @@
+body {
+  background: #F5F1FE;
+  font-family: "Lobster Two", sans-serif;
+}
 
+footer {
+  text-align: center;
+ 
+}
 
-  #quote-box {
-    margin: 50px;
-    border: 1px solid red;
-    padding: 40px; 
-    };
+button {
+  padding: 10px;
+  margin-right: 300px;
+  background-color: #cca8e9;
+  border: 1px solid #cca8e9;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: "Lobster Two", sans-serif;
 
-    #text {
-      font-size: 30px;
-      text-align: center;
-      padding-bottom: 20px;
-      };
-  
-     #author {
-    font-size: 28px;
-    text-align: center;
-    };
+}
+
+a {
+  color: #cca8e9;
+}
+
+.socials {
+  color: #9d53c3;
+}
+
+#quote-box {
+  margin: 30px 380px;
+  border: 1px solid #e8e6ef;
+  padding: 40px; 
+  background-color: #fcfefe ;
+  border-radius: 8px;
+
+  }
+
+#buttons {
+  margin-top: 20px;
+  display: flex;
+  }
+
+#social-buttons {
+  display: flex;
+  font-size: 20px;
+  justify-content: right;
+  color: #cca8e9;
+}
+
+.fa-twitter {
+  padding-right: 10px;
+}
+
+#text {
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 20px;
+  }
+
+#author {
+font-size: 20px;
+text-align: center;
+}
 

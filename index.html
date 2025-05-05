@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Quote Machine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c658eda5d2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <script>
@@ -38,19 +41,21 @@
 
     };
     </script>
-   <style>
-    
-
-   </style>
 </head>
 <body>
   <div class="container" id="quote-box">
     <div class="quote" id="text"></div>
     <div class="author" id="author"></div>
-    <button id="new-quote" onClick="quoteGenerator()">New Quote</button>
-    <a href="https://twitter.com/intent/tweet" target="_blank" id="tweet-quote"><i class="fa-brands fa-twitter"></i></a>
-
+    <div id="buttons">
+    <button id="new-quote" onClick="quoteGenerator()" title="Get a new quote!">New Quote</button>
+    <div id="social-buttons">
+    <a class="socials" href="https://twitter.com/intent/tweet" target="_blank" id="tweet-quote" title="Tweet this quote!"><i class="fa-brands fa-twitter"></i></a>
+    <a class="socials" href="https://twitter.com/intent/tweet" target="_blank" id="post-quote" title="Post this quote!"><i class="fa-brands fa-facebook"></i></a>
+    </div>
   </div>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>   
+  </div>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<footer>Coded with 🖤 By <a href="https://github.com/Rachel-M09" target="_blank">Rachel Maluleke</a>, open-sourced on <a href="https://github.com/Rachel-M09/Random-Quote-Machine" target="_blank">GitHub</a>, and hosted on <a href="https://quote-machine-rm.netlify.app/" target="_blank">Netlify</a></footer>
+
 </body>
 </html>
